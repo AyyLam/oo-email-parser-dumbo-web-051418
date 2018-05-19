@@ -12,7 +12,7 @@ class EmailParser
   end 
   
   def parse
-    @emails.split(/\,|\s/).reject {|i|  i == 0 }
+    @emails.split(/\,|\s/).reject {|i| i.empty?}
   end 
   
 end 
