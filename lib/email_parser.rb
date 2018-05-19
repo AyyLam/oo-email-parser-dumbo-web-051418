@@ -14,7 +14,7 @@ class EmailParser
   def parse
     first = @emails.split(', ')
     first << @emails.split(" ")
-    first.uniq.flatten
+    first.uniq
   end 
   
 end 
