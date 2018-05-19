@@ -13,8 +13,8 @@ class EmailParser
   
   def parse
     first = @emails.split(', ')
-    first << @emails.split(" ")
-    first.flatten
+    second = @emails.split(" ")
+    (first << second).flatten
   end 
   
 end 
